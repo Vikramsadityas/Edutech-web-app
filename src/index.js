@@ -11,7 +11,10 @@ ConnectDB()
         console.log("ERROR:",err);
         throw err;
     })
-    app.listen(process.env.PORT||8000,()=>{
+    // app.get("/api/v1/users/r",(req,res)=>{
+    //     res.send("Hello")
+    // })
+    app.listen(process.env.PORT||9000,()=>{
         console.log(`Server connected at the port:${process.env.PORT}`)
     })
 })
